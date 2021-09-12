@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Header from '@components/Header'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div className="container">
       <Head>
@@ -21,3 +22,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
